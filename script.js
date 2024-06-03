@@ -2,6 +2,10 @@ let search = document.querySelector(".SeachBox");
 let btn = document.querySelector(".btn");
 let recipeContainer = document.querySelector(".recipe-container");
 
+let recipeDetailsContant = document.querySelector(".recipe-details-contant");
+let closeButton = document.querySelector(".closebtn");
+
+
 let url = "https://themealdb.com/api/json/v1/1/search.php?s=";
 
 async function fetchRecipes(inp) {
@@ -34,12 +38,19 @@ function show(recipes) {
     //add Event listene
 
     btn2.addEventListener("click", () => {
-     openRecipePopup(recipes ); 
+     openRecipePopup(recipe); 
 
     })
     recipeContainer.appendChild(recipeDev);
   });
 }
+
+function  openRecipePopup(recipe){
+             
+  recipeDetailsContant.innerHTML = ` <h2>${recipe.strMeal}</h2> `           
+             
+      recipeDetailsContant.parentElement.style.display = "block ";       
+} 
 
 btn.addEventListener("click", async (e) => {
   e.preventDefault(e);

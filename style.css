@@ -123,6 +123,20 @@ nav button:hover {
     transition: background-color  0.2s ease-in-out;
     background-color: #ff5c5c;
 }
+
+.recipe-details{
+    display: none;
+    position: fixed;
+    top:50%;    
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50,-50);
+    background-color: #694c2f;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+}
  
 /* =====================================================Responsiveness=========================================== */
 @media(max-width:600px) {
