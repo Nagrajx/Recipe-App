@@ -123,9 +123,8 @@ nav button:hover {
     transition: background-color  0.2s ease-in-out;
     background-color: #ff5c5c;
 }
-
 .recipe-details{
-    display: none;
+    display: none ;
     position: fixed;
     top:50%;    
     left: 50%;
