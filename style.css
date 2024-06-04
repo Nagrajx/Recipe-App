@@ -86,7 +86,12 @@ nav button:hover {
     box-shadow: 0 5px 10px rgba(78,73, 73, 0.1);
     cursor: pointer;
     max-width: 350px;
+    transition: transform 0.1 ease-in-out ;
 
+}
+
+.recipe:hover{
+    transform: scale(1.02);
 }
 
 .recipe img{
@@ -135,8 +140,55 @@ nav button:hover {
     width: 40%;
     height: 60%;
     font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
 }
- 
+
+
+
+
+.recipe-details-contant{
+    padding: 30px;
+} 
+
+.recipeName{
+     text-align: center;
+     text-transform: uppercase;
+     text-decoration: underline ;
+     margin-bottom: 10px;
+}
+.IngredentsList{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.h3{
+    margin-bottom: 10px;
+}
+.instructions p{
+    line-height: 30px;
+    white-space: pre-line;
+
+}
+
+.closebtn{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px;
+   border: none;
+    cursor: pointer;
+    margin:  18px auto;
+    background-color: #f44336;
+    color: #fff;
+    position: absolute;
+    right: 20px;
+
+}
+
+.closebtn:hover{
+    background-color: #ff5c5c;
+}
 /* =====================================================Responsiveness=========================================== */
 @media(max-width:600px) {
 
